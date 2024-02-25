@@ -6,6 +6,7 @@ import { BrandCard } from "./components/Brand-card";
 
 import products from "./products";
 import { ProductCard } from "./components/Product-card";
+import { Footer } from "./components/Footer";
 
 function App() {
   const brandsName = Array.from(new Set(products.map((prod) => prod.company)));
@@ -30,6 +31,8 @@ function App() {
           ))}
         </div>
       </div>
+
+      <Footer />
     </>
   );
 }
