@@ -17,10 +17,10 @@ export function Home() {
         ))}
       </div>
 
-      <div className="py-10 px-24">
+      <div className="max-w-[1256px] m-auto mb-10">
         <h2 className="text-lg font-bold uppercase mb-10">Ofertas</h2>
 
-        <div className="flex flex-wrap justify-between gap-10">
+        <div className="flex flex-wrap justify-between">
           {products.map((product) => (
             <ProductCard product={product} />
           ))}
