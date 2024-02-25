@@ -1,7 +1,7 @@
 import adidas1 from "./assets/1_adidas.png";
 import adidas2 from "./assets/2_adidas.png";
 import adidas3 from "./assets/3_adidas.png";
-import adidas4 from "./assets/3_adidas.png";
+import adidas4 from "./assets/4_adidas.png";
 
 import nike1 from "./assets/1_nike.png";
 import nike2 from "./assets/2_nike.png";
@@ -34,7 +34,7 @@ const data = [
   {
     id: 3,
     img: adidas3,
-    title: "Nike Rivalry Low",
+    title: "Adidas Rivalry Low",
     prevPrice: 140,
     newPrice: 70,
     company: "Adidas",
@@ -67,7 +67,7 @@ const data = [
   {
     id: 7,
     img: nike3,
-    title: "Nike Pegasus 40",
+    title: "Nike Invincible 3",
     prevPrice: 140,
     newPrice: 290,
     company: "Nike",
@@ -75,7 +75,7 @@ const data = [
   {
     id: 8,
     img: nike4,
-    title: "Nike Pegasus 40",
+    title: "Nike Metcon 8 FlyEase",
     prevPrice: 140,
     newPrice: 250,
     company: "Nike",
