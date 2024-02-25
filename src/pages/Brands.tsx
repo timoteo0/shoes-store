@@ -2,7 +2,6 @@ import adidasLogo from "../assets/adidas_logo.png";
 import nikeLogo from "../assets/nike_logo.png";
 import pumaLogo from "../assets/puma_logo.png";
 import olympikusLogo from "../assets/olympikus_logo.png";
-import { Link } from "react-router-dom";
 
 export function Brands() {
   return (
