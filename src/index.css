@@ -10,8 +10,8 @@
   }
 
   body {
-    background: #0b0b0b;
-    color: #fff;
+    background: #fff;
+    color: #0b0b0b;
     "-webkit-font-smoothing":"antialiased", ;
   }
 }

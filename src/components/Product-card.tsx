@@ -13,7 +13,7 @@ interface ProductCardProps {
 export function ProductCard({ product }: ProductCardProps) {
   return (
     <div className="mb-10">
-      <div className="bg-black p-7 rounded-lg w-[360px] h-[380px] flex items-center">
+      <div className="bg-gray-light-ultra p-7 rounded-lg w-[360px] h-[380px] flex items-center">
         <img src={product.img} alt="" className="w-full" />
       </div>
 

@@ -2,7 +2,7 @@ import { ShoppingCartIcon, UserRoundIcon } from "lucide-react";
 
 export function Header() {
   return (
-    <header className="flex justify-between items-center py-5 px-24">
+    <header className="bg-gray-light-ultra flex justify-between items-center py-5 px-24">
       <div className="font-bold flex gap-1 text-2xl">
         <span className="text-purple">SHOES</span>
         <span>Store</span>
