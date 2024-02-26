@@ -6,8 +6,10 @@ export function Header() {
     <header className="bg-gray-light-ultra">
       <div className="max-w-[1920px] m-auto  flex justify-between items-center py-5 px-24">
         <div className="font-bold flex gap-1 text-2xl">
-          <span className="text-purple">SHOES</span>
-          <span>Store</span>
+          <Link to="/">
+            <span className="text-purple">SHOES</span>
+            <span>Store</span>
+          </Link>
         </div>
 
         <nav className="flex gap-8 font-bold">
