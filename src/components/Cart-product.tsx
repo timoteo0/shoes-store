@@ -1,4 +1,5 @@
-import { ChevronLeftIcon, ChevronRightIcon, Trash2Icon } from "lucide-react";
+import { Trash2Icon } from "lucide-react";
+import { Counter } from "./Counter";
 
 import tenis from "../assets/1_nike.png";
 
@@ -16,16 +17,7 @@ export function CartProduct() {
             <span className="text-gray line-through text-sm">R$ 719,90</span>
           </div>
 
-          <div className="flex items-center gap-4 mt-2">
-            <button className="border border-solid border-gray-dark rounded-md p-1">
-              <ChevronLeftIcon />
-            </button>
-            <span className="text-xl">1</span>
-
-            <button className="border border-solid border-gray-dark rounded-md  p-1">
-              <ChevronRightIcon />
-            </button>
-          </div>
+          <Counter />
         </div>
       </div>
 
