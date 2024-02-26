@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { CurrencyFormat } from "../Utils/currency-format";
 
 interface Product {
   id?: number;
@@ -31,8 +32,12 @@ export function ProductCard({ product, size }: ProductCardProps) {
             {product.title}
           </span>
           <div className="flex items-center gap-2">
-            <span className="font-bold text-2xl">R$ 100,00</span>
-            <span className="text-sm text-gray line-through">R$ 100,00</span>
+            <span className="font-bold text-2xl">
+              {CurrencyFormat(product.newPrice)}
+            </span>
+            <span className="text-sm text-gray line-through">
+              {CurrencyFormat(product.prevPrice)}
+            </span>
           </div>
         </div>
       </Link>
