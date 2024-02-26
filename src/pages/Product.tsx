@@ -4,8 +4,10 @@ import { ChevronLeftIcon, ChevronRightIcon, Truck } from "lucide-react";
 import products from "../products";
 import { ProductCard } from "../components/Product-card";
 import { CurrencyFormat } from "../Utils/currency-format";
+import { useState } from "react";
 
 export function Product() {
+  const [count, setCount] = useState(1);
   const { id } = useParams();
   const idInNumber = Number(id);
 
@@ -13,6 +15,16 @@ export function Product() {
   const sameProductBrand = products.filter(
     (prod) => product && prod.company === product.company
   );
+
+  function handleCountPlusClick() {
+    setCount((prev) => prev + 1);
+  }
+
+  function handleCountMinusClick() {
+    if (count > 1) {
+      setCount((prev) => prev - 1);
+    }
+  }
 
   if (!product) {
     return (
@@ -44,18 +56,23 @@ export function Product() {
               <span className="text-sm text-gray">
                 De:{" "}
                 <span className="line-through">
-                  {" "}
                   {CurrencyFormat(product.prevPrice)}
                 </span>
               </span>
             </div>
 
             <div className="flex items-center gap-4">
-              <button className="border border-solid border-gray-dark rounded-md p-2">
+              <button
+                className="border border-solid border-gray-dark rounded-md p-2"
+                onClick={handleCountMinusClick}
+              >
                 <ChevronLeftIcon />
               </button>
-              <span className="text-xl">1</span>
-              <button className="border border-solid border-gray-dark rounded-md p-2">
+              <span className="text-xl">{count}</span>
+              <button
+                className="border border-solid border-gray-dark rounded-md p-2"
+                onClick={handleCountPlusClick}
+              >
                 <ChevronRightIcon />
               </button>
             </div>
